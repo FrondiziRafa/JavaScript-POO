@@ -1,0 +1,3 @@
+class ValidaCPF {
+    constructor(cpfEnviado)
+}
