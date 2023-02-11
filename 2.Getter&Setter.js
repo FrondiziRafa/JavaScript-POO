@@ -5,17 +5,22 @@ class Carro {
         this[_velocidade] = 0;
     }
     
+    // Acessa como um atributo do objeto
     set velocidade(valor) {
+        console.log('SETTER');
         if(typeof valor !== 'number') return;
         if(valor >=100 || valor <= 0)  return;
         this[_velocidade] = valor;
     }
-
+    
+    // Acessa como um atributo do objeto
     get velocidade(){
+        console.log('GETTER');
         return this[_velocidade]
     }
-
-
+    
+    
+    // Acessa como um atributo do função
     acelerar() {
         if(this[_velocidade]>= 100) return;
         this[_velocidade]++;

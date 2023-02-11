@@ -22,5 +22,7 @@ const controle1 = new ControleRemoto('LG')
 controle1.aumentarVolume();
 controle1.aumentarVolume();
 controle1.aumentarVolume();
+console.log(controle1);
 
-console.log(controle1)
+ControleRemoto.trocaPilha();
+
